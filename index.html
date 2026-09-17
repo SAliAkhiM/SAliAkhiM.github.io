@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Seyed Ali Akhavan (SAliAkhiM) — Computer Engineering & Full-Stack Developer</title>
+  <meta name="title" content="Seyed Ali Akhavan (SAliAkhiM) — Computer Engineering & Full-Stack Developer">
+  <meta name="description" content="Portfolio of Seyed Ali Akhavan (SAliAkhiM), Computer Engineering student at Isfahan University of Technology & Full-Stack Developer building scalable web applications and software systems.">
+  <meta name="keywords" content="Seyed Ali Akhavan, SAliAkhiM, Computer Engineering, Isfahan University of Technology, IUT, Full-Stack Developer, Web Developer, React, C++, Python, Portfolio">
+  <meta name="author" content="Seyed Ali Akhavan">
+  <meta name="theme-color" content="#08090d">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://SAliAkhiM.github.io/">
+  <meta property="og:title" content="Seyed Ali Akhavan (SAliAkhiM) — Computer Engineering & Full-Stack Developer">
+  <meta property="og:description" content="Modern developer portfolio showcasing engineering projects, academic milestones, and technical capabilities.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/119282625?v=4">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://SAliAkhiM.github.io/">
+  <meta property="twitter:title" content="Seyed Ali Akhavan (SAliAkhiM) — Developer Portfolio">
+  <meta property="twitter:description" content="Computer Engineering student at IUT & Full-Stack Developer building scalable web applications.">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/119282625?v=4">
+
+  <!-- Favicon (SVG vector) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='68%' font-size='50' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>SA</text></svg>">
+
+  <!-- Theme Fast-Init to prevent flash -->
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } catch (e) {}
+  </script>
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Accessibility Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Light Mesh Background -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Geometric Grid Pattern Overlay -->
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand-logo" aria-label="Seyed Ali Akhavan Home">
+        <div class="brand-emblem" aria-hidden="true">SA</div>
+        <div class="brand-text">Seyed Ali<span>.</span>dev</div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme (Shortcut: T)">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary" style="padding: 9px 18px; font-size: 0.88rem;">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Body -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <!-- Hero Left / Information -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-dot-pulse" aria-hidden="true"></span>
+            <span>Available for Opportunities & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering Scalable Systems & <span class="text-gradient">Modern Web Experiences</span>
+          </h1>
+
+          <div class="hero-typing-wrap" aria-label="Dynamic roles">
+            <span>Hi, I'm Seyed Ali —</span>
+            <span id="typingRole"></span>
+            <span class="typing-cursor" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-description">
+            Computer Engineering student at <strong>Isfahan University of Technology (IUT)</strong>. Crafting reliable full-stack software, elegant algorithmic solutions, and intuitive interfaces with a commitment to clean architecture.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <a href="https://github.com/SAliAkhiM" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Visit Seyed Ali's GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+
+          <div class="hero-tech-strip">
+            <span class="hero-tech-label">Primary Stack:</span>
+            <span class="tech-chip">C/C++</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">TypeScript</span>
+            <span class="tech-chip">React</span>
+            <span class="tech-chip">Node.js</span>
+            <span class="tech-chip">SQL</span>
+          </div>
+        </div>
+
+        <!-- Hero Right / 3D Tilt Visual Card -->
+        <div class="hero-visual-card">
+          <div class="visual-glass-panel">
+            <div class="panel-header">
+              <div class="window-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="panel-identity">saliakhim.dev</span>
+            </div>
+
+            <div class="profile-avatar-wrap">
+              <img src="assets/images/avatar.png" alt="Seyed Ali Akhavan Profile Avatar" loading="eager" decoding="async">
+              <div class="profile-badge-overlay">
+                <div>
+                  <small>Academic Hub</small>
+                  <strong>Isfahan University of Tech</strong>
+                </div>
+                <span style="font-size: 1.3rem;">🎓</span>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-secondary); padding: 0 4px;">
+              <span>Focus: Full-Stack & Systems</span>
+              <span style="color: var(--accent-secondary); font-family: var(--font-mono);">B.Sc. CE</span>
+            </div>
+          </div>
+
+          <!-- Micro Floating Cards -->
+          <div class="floating-chip floating-chip-1" aria-hidden="true">
+            <div class="floating-chip-icon">&lt;/&gt;</div>
+            <div class="floating-chip-text">
+              <strong>Clean Code</strong>
+              <small>Maintainable & Scalable</small>
+            </div>
+          </div>
+
+          <div class="floating-chip floating-chip-2" aria-hidden="true">
+            <div class="floating-chip-icon">⚡</div>
+            <div class="floating-chip-text">
+              <strong>High Performance</strong>
+              <small>Optimized Architecture</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section & Bento Grid -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 // Mindset & Overview</span>
+          <h2 class="section-title">Engineering with Precision. <span class="text-gradient">Designing for Impact.</span></h2>
+          <p class="section-subtitle">
+            A look into how I think about problem solving, system architecture, and crafting resilient software applications.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Story Card -->
+          <article class="bento-item bento-story">
+            <div>
+              <span class="bento-tag">Perspective</span>
+              <h3>Full-Stack Vision with Computer Engineering Roots</h3>
+              <p>
+                I am Seyed Ali Akhavan, a passionate Computer Engineering student at Isfahan University of Technology. My journey bridges low-level architectural rigor with modern, high-level full-stack web engineering.
+              </p>
+              <p>
+                From analyzing algorithmic computational complexity to architecting reactive web interfaces, I enjoy turning abstract concepts into robust, accessible digital tools that empower users.
+              </p>
+            </div>
+
+            <div class="bento-badges">
+              <span class="bento-badge-pill">⚡ Algorithmic Thinking</span>
+              <span class="bento-badge-pill">◈ Clean Architecture</span>
+              <span class="bento-badge-pill">✦ Modern Web Standards</span>
+              <span class="bento-badge-pill">⚙️ Systems Performance</span>
+            </div>
+          </article>
+
+          <!-- Quote Card -->
+          <article class="bento-item bento-quote">
+            <div class="quote-glyph" aria-hidden="true">“</div>
+            <p class="quote-body">
+              Simplicity is prerequisite for reliability. Great software makes difficult problems feel effortless.
+            </p>
+            <span class="quote-author">— Edsger W. Dijkstra · Engineering Principle</span>
+          </article>
+
+          <!-- Live GitHub Stats: Repositories -->
+          <div class="bento-item bento-stat">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-metric" id="statRepos">0</div>
+              <div class="stat-title">Public Repositories</div>
+            </div>
+          </div>
+
+          <!-- Live GitHub Stats: Stars -->
+          <div class="bento-item bento-stat">
+            <div class="stat-icon-wrap" aria-hidden="true" style="color: var(--accent-amber);">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-metric" id="statStars">0</div>
+              <div class="stat-title">GitHub Stars Earned</div>
+            </div>
+          </div>
+
+          <!-- Live GitHub Stats: Followers -->
+          <div class="bento-item bento-stat">
+            <div class="stat-icon-wrap" aria-hidden="true" style="color: var(--accent-secondary);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-metric" id="statFollowers">0</div>
+              <div class="stat-title">GitHub Followers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Milestones Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">02 // Academic Path</span>
+          <h2 class="section-title">Education & <span class="text-gradient">Academic Milestones</span></h2>
+          <p class="section-subtitle">
+            Solid foundations in computer engineering at one of the top technical universities in the country.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <!-- IUT Degree Card -->
+          <div class="timeline-card">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2022 — Present</span>
+              <h3 class="timeline-title">Bachelor of Science in Computer Engineering</h3>
+              <div class="timeline-institution">Isfahan University of Technology (IUT)</div>
+              <p class="timeline-desc">
+                Comprehensive study of computational theory, system architecture, data structures, and software engineering methodologies. Active exploration of web technologies, systems programming, and modern developer tooling.
+              </p>
+              <div class="timeline-coursework">
+                <span class="course-tag">Data Structures</span>
+                <span class="course-tag">Design of Algorithms</span>
+                <span class="course-tag">Operating Systems</span>
+                <span class="course-tag">Database Management</span>
+                <span class="course-tag">Computer Networks</span>
+                <span class="course-tag">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Self-Directed Technical Deep Dive -->
+          <div class="timeline-card">
+            <div class="timeline-marker" aria-hidden="true" style="border-color: var(--accent-secondary); box-shadow: 0 0 12px var(--accent-secondary);"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Continuous Learning</span>
+              <h3 class="timeline-title">Full-Stack & Systems Engineering Specialization</h3>
+              <div class="timeline-institution">Open Source & Practical Implementation</div>
+              <p class="timeline-desc">
+                Independent development of full-stack web applications, RESTful microservices, and algorithmic challenges. Applying theoretical concepts to real-world codebases with modern frameworks.
+              </p>
+              <div class="timeline-coursework">
+                <span class="course-tag">Modern React & Next.js</span>
+                <span class="course-tag">Node.js Ecosystem</span>
+                <span class="course-tag">PostgreSQL & Prisma</span>
+                <span class="course-tag">RESTful API Design</span>
+                <span class="course-tag">Git & CI/CD Workflows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">03 // Selected Work</span>
+          <h2 class="section-title">Projects & <span class="text-gradient">Open Source Software</span></h2>
+          <p class="section-subtitle">
+            A live catalog integrated directly with GitHub API, featuring full-stack applications, algorithms, and system utilities.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters" role="tablist" aria-label="Project filter categories">
+          <button class="filter-btn active" data-filter="all" type="button" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="featured" type="button" role="tab" aria-selected="false">Featured</button>
+          <button class="filter-btn" data-filter="web" type="button" role="tab" aria-selected="false">Web & Full-Stack</button>
+          <button class="filter-btn" data-filter="systems" type="button" role="tab" aria-selected="false">Systems & Algorithms</button>
+        </div>
+
+        <!-- Projects Grid (Populated dynamically via main.js) -->
+        <div class="projects-grid" id="projectsGrid" aria-live="polite">
+          <!-- Skeleton Loading Placeholders -->
+          <div class="skeleton-card" aria-hidden="true"></div>
+          <div class="skeleton-card" aria-hidden="true"></div>
+          <div class="skeleton-card" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Capabilities / Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // Technical Matrix</span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Core Competencies</span></h2>
+          <p class="section-subtitle">
+            A well-rounded skill set blending low-level programming discipline with high-velocity web engineering.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Systems & Core Programming -->
+          <article class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-category-icon">SYS</div>
+              <div>
+                <h3>Systems & Core CS</h3>
+                <p>Foundations & Algorithms</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>C / C++</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="88"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Data Structures & Algorithms</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="90"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Linux & Shell Scripting</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="82"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 2: Frontend & UI -->
+          <article class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-category-icon" style="color: var(--accent-secondary); background: rgba(6, 182, 212, 0.12);">UI</div>
+              <div>
+                <h3>Frontend Development</h3>
+                <p>Interactive User Interfaces</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>JavaScript (ES6+) & TypeScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="90"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>React & Modern Frameworks</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="88"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>HTML5 & CSS3 / Modern Layouts</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="95"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Responsive & Accessible Design</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="90"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 3: Backend & Databases -->
+          <article class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-category-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.12);">API</div>
+              <div>
+                <h3>Backend & Database</h3>
+                <p>Scalable Data Architecture</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Node.js & Express</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>SQL & Relational Databases</span>
+                  <span>86%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="86"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>RESTful APIs & Integration</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="88"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Authentication & Security Basics</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="82"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 4: Tools & Engineering Workflow -->
+          <article class="skill-category-card">
+            <div class="skill-header">
+              <div class="skill-category-icon" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.12);">DEV</div>
+              <div>
+                <h3>Dev Tools & DX</h3>
+                <p>Workflow & Productivity</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Git & GitHub Workflows</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="95"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Docker & Containers</span>
+                  <span>78%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="78"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>VS Code & Debugging Tooling</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="92"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Agile Thinking & Problem Solving</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-progress="90"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Workflow Section -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05 // Methodology</span>
+          <h2 class="section-title">How I Build <span class="text-gradient">Resilient Software</span></h2>
+          <p class="section-subtitle">
+            A structured, analytical approach to turning complex requirements into production-ready software.
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <div class="workflow-step-num">01</div>
+            <h3>Analyze & Architect</h3>
+            <p>
+              Deconstruct requirements into algorithmic building blocks, evaluate time/space complexity, and establish clean modular interfaces before writing code.
+            </p>
+          </article>
+
+          <article class="workflow-card">
+            <div class="workflow-step-num">02</div>
+            <h3>Develop & Iterate</h3>
+            <p>
+              Write clean, typed, and well-structured code in focused sprints, prioritizing maintainability, responsive styling, and robust error handling.
+            </p>
+          </article>
+
+          <article class="workflow-card">
+            <div class="workflow-step-num">03</div>
+            <h3>Optimize & Deploy</h3>
+            <p>
+              Profile system bottlenecks, ensure cross-device fluid responsiveness, verify web accessibility, and deploy with automated pipelines.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration CTA Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-cta-panel">
+          <div class="contact-text">
+            <span class="section-tag">06 // Connect</span>
+            <h2>Have an exciting project?<br><span class="text-gradient">Let’s build it together.</span></h2>
+            <p>
+              I am open to software development opportunities, internship roles, freelance projects, and technical discussions. Let's get in touch!
+            </p>
+
+            <div class="contact-button-row">
+              <a href="mailto:seyedali.akhavan@gmail.com" class="btn btn-primary">
+                Send an Email ↗
+              </a>
+              <button type="button" class="btn btn-secondary btn-copy-email" data-email="seyedali.akhavan@gmail.com" aria-label="Copy email address to clipboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy Email
+              </button>
+            </div>
+          </div>
+
+          <div class="social-links-grid">
+            <!-- GitHub Link -->
+            <a href="https://github.com/SAliAkhiM" target="_blank" rel="noopener noreferrer" class="social-link-card">
+              <div class="social-card-left">
+                <div class="social-icon-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="social-meta">
+                  <small>Code & Contributions</small>
+                  <strong>github.com/SAliAkhiM</strong>
+                </div>
+              </div>
+              <span class="social-card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <!-- LinkedIn Link -->
+            <a href="https://linkedin.com/in/saliakhim" target="_blank" rel="noopener noreferrer" class="social-link-card">
+              <div class="social-card-left">
+                <div class="social-icon-box" style="color: var(--accent-secondary);">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="social-meta">
+                  <small>Professional Network</small>
+                  <strong>LinkedIn Profile</strong>
+                </div>
+              </div>
+              <span class="social-card-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <!-- Email Direct Card -->
+            <a href="mailto:seyedali.akhavan@gmail.com" class="social-link-card">
+              <div class="social-card-left">
+                <div class="social-icon-box" style="color: var(--accent-emerald);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="social-meta">
+                  <small>Direct Inquiries</small>
+                  <strong>seyedali.akhavan@gmail.com</strong>
+                </div>
+              </div>
+              <span class="social-card-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <div class="brand-emblem" aria-hidden="true">SA</div>
+          <div class="brand-text">Seyed Ali<span>.</span>dev</div>
+        </a>
+        <p>Engineered with precision · Computer Engineering @ IUT</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-copy">
+          &copy; <span id="currentYear"></span> Seyed Ali Akhavan (SAliAkhiM). All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notice -->
+  <div class="toast-notice" id="toastNotice" role="alert" aria-live="assertive">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
