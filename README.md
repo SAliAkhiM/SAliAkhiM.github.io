@@ -1,13 +1,13 @@
 # 🌐 Seyed Ali Akhavan (SAliAkhiM) — Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/SAliAkhiM/SAliAkhiM.github.io?color=6366f1)
+![GitHub repo size](https://img.shields.io/github/repo-size/SAliAkhiM/SAliAkhiM.github.io?color=2A7C13)
 ![GitHub stars](https://img.shields.io/github/stars/SAliAkhiM/SAliAkhiM.github.io?style=social)
-![GitHub license](https://img.shields.io/github/license/SAliAkhiM/SAliAkhiM.github.io?color=06b6d4)
+![GitHub license](https://img.shields.io/github/license/SAliAkhiM/SAliAkhiM.github.io?color=76C457)
 ![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=https%3A%2F%2FSAliAkhiM.github.io)
 
 A high-performance, cyber-luxury developer portfolio and engineering showcase for **Seyed Ali Akhavan (SAliAkhiM)**, Computer Engineering Student at **Isfahan University of Technology (IUT)**. 
 
-Built with pure vanilla web technologies (HTML5, CSS3, modern ES6+ JavaScript) featuring real-time GitHub API integration, an obsidian dark-first visual identity with electric indigo & cyan gradients, glassmorphism, dynamic project filtering, and dual-theme support.
+Built with pure vanilla web technologies (HTML5, CSS3, modern ES6+ JavaScript) featuring real-time GitHub API integration, an obsidian dark-first visual identity with lush forest & vibrant emerald green (`#2A7C13` & `#76C457`) gradients, glassmorphism, dynamic project filtering, and dual-theme support.
 
 🔗 **Live Website**: [saliakhim.github.io](https://SAliAkhiM.github.io)
 
@@ -17,7 +17,7 @@ Built with pure vanilla web technologies (HTML5, CSS3, modern ES6+ JavaScript) f
 
 - ⚡ **Zero Dependencies & Blazing Fast**: 100% Vanilla HTML, CSS, and ES6+ JavaScript. No build step, zero bundler overhead, instant page loads.
 - 🌓 **Dual-Theme System (Dark & Light)**:
-  - Default Obsidian Cyber-Luxury dark palette (`#08090d`) with electric indigo/cyan neon accents.
+  - Default Obsidian Cyber-Luxury dark palette (`#070b08`) with electric emerald & forest green neon accents.
   - Crisp light theme with glassmorphic cards.
   - Persistent user preference stored in `localStorage`.
   - **Keyboard Shortcut**: Press `T` anywhere to toggle themes seamlessly.
@@ -48,6 +48,7 @@ Built with pure vanilla web technologies (HTML5, CSS3, modern ES6+ JavaScript) f
 ```txt
 .
 ├── index.html              # Main semantic HTML entry point
+├── LICENSE                 # MIT License file
 ├── README.md               # Repository documentation & guide
 └── assets/
     ├── css/
@@ -93,4 +94,4 @@ Then navigate to `http://localhost:3000` in your browser.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
