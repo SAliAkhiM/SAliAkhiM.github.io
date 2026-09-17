@@ -50,7 +50,7 @@ function initTheme() {
     html.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
     if (themeMeta) {
-      themeMeta.setAttribute('content', theme === 'dark' ? '#08090d' : '#f8fafc');
+      themeMeta.setAttribute('content', theme === 'dark' ? '#070b08' : '#f7faf7');
     }
     if (themeToggleBtn) {
       themeToggleBtn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
