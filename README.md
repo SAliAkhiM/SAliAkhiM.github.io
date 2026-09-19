@@ -1,11 +1,11 @@
-# 🌐 Seyed Ali Akhavan (SAliAkhiM) — Portfolio
+# 🌐 Seyed Ali (SAliAkhiM) — Portfolio
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/SAliAkhiM/SAliAkhiM.github.io?color=2A7C13)
 ![GitHub stars](https://img.shields.io/github/stars/SAliAkhiM/SAliAkhiM.github.io?style=social)
 ![GitHub license](https://img.shields.io/github/license/SAliAkhiM/SAliAkhiM.github.io?color=76C457)
 ![Website](https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=https%3A%2F%2FSAliAkhiM.github.io)
 
-A high-performance, cyber-luxury developer portfolio and engineering showcase for **Seyed Ali Akhavan (SAliAkhiM)**, Computer Engineering Student at **Isfahan University of Technology (IUT)**. 
+A high-performance, cyber-luxury developer portfolio and engineering showcase for **Seyed Ali (SAliAkhiM)**, Computer Engineering Student at **Isfahan University of Technology (IUT)**. 
 
 Built with pure vanilla web technologies (HTML5, CSS3, modern ES6+ JavaScript) featuring real-time GitHub API integration, an obsidian dark-first visual identity with lush forest & vibrant emerald green (`#2A7C13` & `#76C457`) gradients, glassmorphism, dynamic project filtering, and dual-theme support.
 
@@ -83,7 +83,7 @@ Then navigate to `http://localhost:3000` in your browser.
 ## 🔧 Personalization & Customization
 
 1. **Email & Socials**:
-   - Update `seyedali.akhavan@gmail.com` and LinkedIn URLs in `index.html` and `assets/js/main.js`.
+   - Update `saliakhim@gmail.com` and LinkedIn URLs in `index.html` and `assets/js/main.js`.
 2. **Projects**:
    - The site automatically fetches repositories from GitHub username `SAliAkhiM`.
    - You can customize or add showcase projects inside `showcaseProjects` in `assets/js/main.js`.

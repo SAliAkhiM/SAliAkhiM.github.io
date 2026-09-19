@@ -1,5 +1,5 @@
 /**
- * Seyed Ali Akhavan (SAliAkhiM) - Official Portfolio
+ * Seyed Ali (SAliAkhiM) - Official Portfolio
  * Core JavaScript Logic · Modern ES6+ · Zero Framework Dependencies
  */
 
@@ -480,7 +480,7 @@ function initClipboardCopy() {
 
   copyButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const email = btn.getAttribute('data-email') || 'seyedali.akhavan@gmail.com';
+      const email = btn.getAttribute('data-email') || 'saliakhim@gmail.com';
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(() => {
