@@ -42,6 +42,7 @@ Built with pure vanilla web technologies (HTML5, CSS3, modern ES6+ JavaScript) f
 - **Typography**: Google Fonts (*Outfit*, *Plus Jakarta Sans*, *JetBrains Mono*)
 - **APIs**: GitHub REST API v3
 
+
 ---
 
 ## 📂 Project Structure
