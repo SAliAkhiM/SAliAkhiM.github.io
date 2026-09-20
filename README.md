@@ -13,6 +13,7 @@ Built with pure vanilla web technologies (HTML5, CSS3, modern ES6+ JavaScript) f
 
 ---
 
+
 ## ✨ Features & Highlights
 
 - ⚡ **Zero Dependencies & Blazing Fast**: 100% Vanilla HTML, CSS, and ES6+ JavaScript. No build step, zero bundler overhead, instant page loads.
